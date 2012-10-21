@@ -1,0 +1,9 @@
+gumstix/install/tmp/*
+gumstix/install/images/*
+~*
+*~
+#*
+*#
+*.o
+*.gch
+*.bak
