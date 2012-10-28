@@ -1,0 +1,139 @@
+#
+#	Module:			makefile
+#
+#					Copyright (C) Altera Corporation 1997-1999
+#
+#	Description:	Makefile for JAM Interpreter
+#
+
+
+EXE = jam
+
+OBJS =  jamstub.o \
+	jamexec.o \
+	jamnote.o \
+	jamcrc.o \
+	jamsym.o \
+	jamstack.o \
+	jamheap.o \
+	jamarray.o \
+	jamcomp.o \
+	jamjtag.o \
+	jamutil.o \
+	jamexp.o \
+	jamgpio.o
+
+$(EXE) : $(OBJS)
+	gcc $^ -o $@
+
+#link $(OBJS) advapi32.lib /out:jam
+
+# Dependencies:
+
+jamstub.o : \
+	jamstub.c \
+	jamport.h \
+	jamexprt.h \
+	jamgpio.c \
+	jamgpio.h
+
+jamexec.o : \
+	jamexec.c \
+	jamport.h \
+	jamexprt.h \
+	jamdefs.h \
+	jamexec.h \
+	jamutil.h \
+	jamexp.h \
+	jamsym.h \
+	jamstack.h \
+	jamheap.h \
+	jamarray.h \
+	jamjtag.h
+
+jamnote.o : \
+	jamnote.c \
+	jamexprt.h \
+	jamdefs.h \
+	jamexec.h \
+	jamutil.h
+
+jamcrc.o : \
+	jamcrc.c \
+	jamexprt.h \
+	jamdefs.h \
+	jamexec.h \
+	jamutil.h
+
+jamsym.o : \
+	jamsym.c \
+	jamexprt.h \
+	jamdefs.h \
+	jamsym.h \
+	jamheap.h \
+	jamutil.h
+
+jamstack.o : \
+	jamstack.c \
+	jamexprt.h \
+	jamdefs.h \
+	jamutil.h \
+	jamsym.h \
+	jamstack.h
+
+jamheap.o : \
+	jamheap.c \
+	jamport.h \
+	jamexprt.h \
+	jamdefs.h \
+	jamsym.h \
+	jamstack.h \
+	jamheap.h \
+	jamutil.h
+
+jamarray.o : \
+	jamarray.c \
+	jamexprt.h \
+	jamdefs.h \
+	jamexec.h \
+	jamexp.h \
+	jamsym.h \
+	jamstack.h \
+	jamheap.h \
+	jamutil.h \
+	jamcomp.h \
+	jamarray.h
+
+jamcomp.o : \
+	jamcomp.c \
+	jamdefs.h \
+	jamcomp.h
+
+jamjtag.o : \
+	jamjtag.c \
+	jamexprt.h \
+	jamdefs.h \
+	jamsym.h \
+	jamutil.h \
+	jamjtag.h
+
+jamutil.o : \
+	jamutil.c \
+	jamutil.h
+
+jamexp.o : \
+	jamexp.c \
+	jamexprt.h \
+	jamdefs.h \
+	jamexp.h \
+	jamsym.h \
+	jamheap.h \
+	jamarray.h \
+	jamutil.h \
+	jamytab.h
+
+clean :
+	rm -f *~
+	rm -f $(OBJS)
+	rm -f $(EXE)
+	rm -f *.gch

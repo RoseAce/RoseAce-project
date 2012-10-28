@@ -1,0 +1,339 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 32-bit
+# Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Full Version
+# Date created = 00:22:09  April 26, 2012
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		driver_test_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions
+# and other software and tools, and its AMPP partner logic
+# functions, and any output files from any of the foregoing
+# (including device programming or simulation files), and any
+# associated documentation or information are expressly subject
+# to the terms and conditions of the Altera Program License
+# Subscription Agreement, Altera MegaCore Function License
+# Agreement, or other applicable license agreement, including,
+# without limitation, that your use is for the sole purpose of
+# programming logic devices manufactured by Altera and sold by
+# Altera or its authorized distributors.  Please refer to the
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 32-bit
+# Version 11.1 Build 259 01/25/2012 Service Pack 2 SJ Full Version
+# Date created = 00:24:50  April 26, 2012
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		driver_test_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name DEVICE EP3C25Q240C8
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "11.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "00:25:15  APRIL 26, 2012"
+set_global_assignment -name LAST_QUARTUS_VERSION "11.1 SP2"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE PQFP
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 240
+set_global_assignment -name AUTO_RESTART_CONFIGURATION OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name GENERATE_JAM_FILE ON
+set_global_assignment -name ON_CHIP_BITSTREAM_DECOMPRESSION OFF
+set_global_assignment -name FORCE_CONFIGURATION_VCCIO OFF
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "1.8 V"
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_FLASH_NCE_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DCLK_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_187 -to gsckb
+set_location_assignment PIN_189 -to gsckg
+set_location_assignment PIN_188 -to gsckr
+set_location_assignment PIN_195 -to gslat
+set_location_assignment PIN_185 -to gssck
+set_location_assignment PIN_177 -to gssin[0]
+set_location_assignment PIN_176 -to gssin[1]
+set_location_assignment PIN_173 -to gssin[2]
+set_location_assignment PIN_171 -to gssin[3]
+set_location_assignment PIN_203 -to gssin[4]
+set_location_assignment PIN_207 -to gssin[5]
+set_location_assignment PIN_214 -to gssin[6]
+set_location_assignment PIN_216 -to gssin[7]
+set_location_assignment PIN_196 -to xblink
+set_location_assignment PIN_209 -to clk12
+set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name RAPID_RECOMPILE_MODE ON
+set_location_assignment PIN_184 -to dcsin[0]
+set_location_assignment PIN_183 -to dcsin[1]
+set_location_assignment PIN_182 -to dcsin[2]
+set_location_assignment PIN_181 -to dcsin[3]
+set_location_assignment PIN_197 -to dcsin[4]
+set_location_assignment PIN_200 -to dcsin[5]
+set_location_assignment PIN_201 -to dcsin[6]
+set_location_assignment PIN_202 -to dcsin[7]
+set_location_assignment PIN_186 -to dcsck
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_location_assignment PIN_43 -to gumstix_nADV
+set_location_assignment PIN_5 -to gumstix_nCS
+set_location_assignment PIN_44 -to gumstix_nOE
+set_location_assignment PIN_41 -to gumstix_nWE
+set_location_assignment PIN_13 -to gumstix_ad[0]
+set_location_assignment PIN_21 -to gumstix_ad[1]
+set_location_assignment PIN_46 -to gumstix_ad[2]
+set_location_assignment PIN_50 -to gumstix_ad[3]
+set_location_assignment PIN_52 -to gumstix_ad[4]
+set_location_assignment PIN_56 -to gumstix_ad[5]
+set_location_assignment PIN_37 -to gumstix_ad[6]
+set_location_assignment PIN_39 -to gumstix_ad[7]
+set_location_assignment PIN_18 -to gumstix_ad[8]
+set_location_assignment PIN_14 -to gumstix_ad[9]
+set_location_assignment PIN_49 -to gumstix_ad[10]
+set_location_assignment PIN_51 -to gumstix_ad[11]
+set_location_assignment PIN_55 -to gumstix_ad[12]
+set_location_assignment PIN_22 -to gumstix_ad[13]
+set_location_assignment PIN_38 -to gumstix_ad[14]
+set_location_assignment PIN_57 -to gumstix_ad[15]
+set_location_assignment PIN_12 -to gumstix_addr[17]
+set_location_assignment PIN_45 -to gumstix_addr[18]
+set_location_assignment PIN_9 -to gumstix_addr[19]
+set_location_assignment PIN_6 -to gumstix_addr[20]
+set_location_assignment PIN_34 -to gumstix_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gsckb
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gsckg
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gsckr
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gslat
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gssck
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gssin[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gssin[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gssin[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gssin[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gssin[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gssin[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gssin[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to gssin[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to xblink
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to clk12
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to dcsin[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to dcsin[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to dcsin[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to dcsin[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to dcsin[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to dcsin[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to dcsin[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to dcsin[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to dcsck
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_ASYNCHRONOUS_SIGNAL_PIPELINING ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION ON
+set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA ON
+set_global_assignment -name CYCLONEIII_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_location_assignment PIN_69 -to ram1_clk
+set_location_assignment PIN_70 -to ram1_we_n
+set_location_assignment PIN_107 -to ram1_addr[0]
+set_location_assignment PIN_108 -to ram1_addr[1]
+set_location_assignment PIN_112 -to ram1_addr[2]
+set_location_assignment PIN_111 -to ram1_addr[3]
+set_location_assignment PIN_110 -to ram1_addr[4]
+set_location_assignment PIN_109 -to ram1_addr[5]
+set_location_assignment PIN_106 -to ram1_addr[6]
+set_location_assignment PIN_103 -to ram1_addr[7]
+set_location_assignment PIN_100 -to ram1_addr[8]
+set_location_assignment PIN_99 -to ram1_addr[9]
+set_location_assignment PIN_78 -to ram1_addr[13]
+set_location_assignment PIN_76 -to ram1_addr[14]
+set_location_assignment PIN_73 -to ram1_addr[15]
+set_location_assignment PIN_72 -to ram1_addr[16]
+set_location_assignment PIN_64 -to ram1_addr[17]
+set_location_assignment PIN_63 -to ram1_addr[18]
+set_location_assignment PIN_68 -to ram1_bwa_n
+set_location_assignment PIN_65 -to ram1_ce1_n
+set_location_assignment PIN_80 -to ram1_data[0]
+set_location_assignment PIN_81 -to ram1_data[1]
+set_location_assignment PIN_82 -to ram1_data[2]
+set_location_assignment PIN_83 -to ram1_data[3]
+set_location_assignment PIN_84 -to ram1_data[4]
+set_location_assignment PIN_87 -to ram1_data[5]
+set_location_assignment PIN_88 -to ram1_data[6]
+set_location_assignment PIN_71 -to ram1_oe_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[18]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_data[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_data[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_data[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_data[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_data[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_data[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_data[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_oe_n
+set_location_assignment PIN_95 -to ram1_addr[11]
+set_location_assignment PIN_94 -to ram1_addr[12]
+set_location_assignment PIN_93 -to ram1_data[7]
+set_location_assignment PIN_98 -to ram1_addr[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_data[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_addr[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_we_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_bwa_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram1_ce1_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to a
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to b
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to index
+set_location_assignment PIN_238 -to a
+set_location_assignment PIN_239 -to b
+set_location_assignment PIN_240 -to index
+set_global_assignment -name SYSTEMVERILOG_FILE src/internal_rom.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/fetch_pixels.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/blade_position.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/zbtram.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/zbt_write_ctrl.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/ram_controller.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/cross_exchanger.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/config_shift_register.sv
+set_global_assignment -name VERILOG_FILE src/pll.v
+set_global_assignment -name SYSTEMVERILOG_FILE src/gumstix_interface.sv
+set_global_assignment -name VERILOG_FILE src/fifo.v
+set_global_assignment -name SYSTEMVERILOG_FILE src/led_shift_register.sv
+set_global_assignment -name SYSTEMVERILOG_FILE src/fpga_top.sv
+set_global_assignment -name QIP_FILE src/pll.qip
+set_location_assignment PIN_126 -to ram2_clk
+set_location_assignment PIN_120 -to ram2_we_n
+set_location_assignment PIN_160 -to ram2_addr[0]
+set_location_assignment PIN_161 -to ram2_addr[1]
+set_location_assignment PIN_167 -to ram2_addr[2]
+set_location_assignment PIN_166 -to ram2_addr[3]
+set_location_assignment PIN_164 -to ram2_addr[4]
+set_location_assignment PIN_162 -to ram2_addr[5]
+set_location_assignment PIN_159 -to ram2_addr[6]
+set_location_assignment PIN_146 -to ram2_addr[7]
+set_location_assignment PIN_145 -to ram2_addr[8]
+set_location_assignment PIN_142 -to ram2_addr[9]
+set_location_assignment PIN_128 -to ram2_addr[13]
+set_location_assignment PIN_113 -to ram2_addr[14]
+set_location_assignment PIN_114 -to ram2_addr[15]
+set_location_assignment PIN_118 -to ram2_addr[16]
+set_location_assignment PIN_168 -to ram2_addr[17]
+set_location_assignment PIN_169 -to ram2_addr[18]
+set_location_assignment PIN_117 -to ram2_bwa_n
+set_location_assignment PIN_127 -to ram2_ce1_n
+set_location_assignment PIN_131 -to ram2_data[0]
+set_location_assignment PIN_132 -to ram2_data[1]
+set_location_assignment PIN_133 -to ram2_data[2]
+set_location_assignment PIN_134 -to ram2_data[3]
+set_location_assignment PIN_147 -to ram2_data[4]
+set_location_assignment PIN_148 -to ram2_data[5]
+set_location_assignment PIN_144 -to ram2_data[6]
+set_location_assignment PIN_119 -to ram2_oe_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[18]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_data[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_data[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_data[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_data[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_data[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_data[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_data[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_oe_n
+set_location_assignment PIN_137 -to ram2_addr[11]
+set_location_assignment PIN_135 -to ram2_addr[12]
+set_location_assignment PIN_143 -to ram2_data[7]
+set_location_assignment PIN_139 -to ram2_addr[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_data[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_addr[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_we_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_bwa_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ram2_ce1_n
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
